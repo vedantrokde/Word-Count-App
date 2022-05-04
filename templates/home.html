@@ -1,0 +1,24 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WordCount | Homepage</title>
+	</head>
+	<body>
+		<h2>WordCount</h2>
+		<hr />
+		<a href="{% url 'about' %}">Go to About</a>
+		<br />
+		<form action="{% url 'count' %}">
+			<textarea
+				name="fulltext"
+				id="fulltext"
+				cols="40"
+				rows="10"
+			></textarea>
+			<br />
+			<input type="submit" value="Count!" />
+		</form>
+	</body>
+</html>
